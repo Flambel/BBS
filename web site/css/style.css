@@ -33,12 +33,12 @@ html, body{
 	font-size: 100%;
 	background: #fff;
     font-weight: lighter;
-    font-style: italic;
     font-family: Verdana, Arial, Tahoma, Serif;
 }
 
 .newfont{
-    font-family: Verdana, Arial, Tahoma, Serif;
+    font-style: italic;
+    font-family: cursive, Arial, Tahoma, Serif;
 }
 
 body a {
@@ -960,6 +960,7 @@ input.checked {
     margin-bottom: 14px;
 }
 h3.heading-tittle {
+    font-family: cursive;
     text-align: center;
     color: #000;
     font-size: 35px;
@@ -3547,6 +3548,7 @@ input[type="radio"], input[type="checkbox"] {
         font-size: 13px;
     }
     h3.heading-tittle {
+        font-family: cursive;
         font-size: 32px;
     }
     .effect-bg h3 {
@@ -4121,6 +4123,7 @@ input[type="radio"], input[type="checkbox"] {
         padding-bottom: 16px;
     }
     h3.heading-tittle {
+        font-family: cursive;
         font-size: 28px;
         letter-spacing: 0px;
     }
@@ -4651,6 +4654,7 @@ input[type="radio"], input[type="checkbox"] {
         padding: 15px 3px;
     }
     h3.heading-tittle {
+        font-family: cursive;
         font-size: 23px;
     }
     .product-new-top {

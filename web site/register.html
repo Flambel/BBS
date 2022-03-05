@@ -164,8 +164,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			display: inline-block;
 			border: 0;
 			outline: 0;
-			box-shadow: 0px 4px 20px 0px #49c628a6;
+			box-shadow: 0px 4px 20px 0px #1accfd89;
 			background-image: linear-gradient(135deg, #1accfd 10%, #1083b5 100%);
+		}
+		.box-form .right button:hover {
+			float: right;
+			color: #fff;
+			font-size: 16px;
+			padding: 12px 35px;
+			border-radius: 50px;
+			display: inline-block;
+			border: 0;
+			outline: 0;
+			box-shadow: 0px 4px 20px 0px #1084b58c;
+			background-image: linear-gradient(135deg, #c73b59 10%, #a41a38 100%);
 		}
 
 		label::before {
@@ -724,31 +736,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- partial:index.partial.html -->
 	<div class="login" style="padding-top: 50px; padding-bottom: 2%;">
 		<div class="box-form">
-			<div class="right">
+			<div class="right" style="
+			font-family: Jazz LET, fantasy;">
 				<br>
-				<h2>Inscription</h2>
+				<h2 style="
+				font-family: Jazz LET, fantasy;">Inscription</h2>
 				<br><br>
 				<div class="inputs">
-					<label for="nom">Nom</label><br>
-					<input type="text" id="nom" placeholder="Nom complet">
+					<label style=" fantasy; font-size: 20px;" for="nom">Nom</label><br>
+					<input style="font-style: italic" type="text" id="nom" placeholder="Nom complet">
 					<br><br>
-					<label for="contact">Contact</label><br>
-					<input id="contact" type="text" placeholder="Numéro de téléphone">
+					<label style=" fantasy; font-size: 20px;" for="contact">Contact</label><br>
+					<input style="font-style: italic" id="contact" type="text" placeholder="Numéro de téléphone">
 					<br><br>
-					<label for="ville">Ville</label><br>
-					<input id="ville" type="text" placeholder="Ville de résidence">
+					<label style=" fantasy; font-size: 20px;" for="ville">Ville</label><br>
+					<input style="font-style: italic" id="ville" type="text" placeholder="Ville de résidence">
 					<br><br>
-					<label for="dateNaiss">Date de naissance</label><br>
-					<input type="text" id="dateNaiss" placeholder="Date de naissance">
+					<label style=" fantasy; font-size: 20px;" for="dateNaiss">Date de naissance</label><br>
+					<input style="font-style: italic" type="text" id="dateNaiss" placeholder="Date de naissance">
 					<br><br>
-					<label for="email">Email</label><br>
-					<input type="text" id="email" placeholder="Email">
+					<label style=" fantasy; font-size: 20px;" for="email">Email</label><br>
+					<input style="font-style: italic" type="text" id="email" placeholder="Email">
 					<br><br>
-					<label for="password">Mot de passe</label><br>
-					<input type="password" id="password" placeholder="Mot de passe">
+					<label style=" fantasy; font-size: 20px;" for="password">Mot de passe</label><br>
+					<input style="font-style: italic" type="password" id="password" placeholder="Mot de passe">
 					<br><br>
-					<label for="password2">Mot de passe</label><br>
-					<input type="password" id="password2" placeholder="confirmer le mot de passe">
+					<label style=" fantasy; font-size: 20px;" for="password2">Mot de passe</label><br>
+					<input style="font-style: italic" type="password" id="password2" placeholder="confirmer le mot de passe">
 				</div>
 
 				<br><br>
@@ -761,7 +775,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</label>
 					<br>
 				</div><br>
-				<p>Mot de passe oublié</p>
+				<p style="font-style: italic">Mot de passe oublié</p>
 				<br>
 
 				<br>
@@ -770,23 +784,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<br><br><br>
 				<p>Vous n'avez pas de compte? <a href="#">Créer un compte</a> en une minute, c'est gratuit.</p>
 			</div>
-			<div class="left">
+			<div class="left" style="
+				font-family: Jazz LET, fantasy; font-size: 2em;">
 				<div class="overlay">
 					<h2><img src="images/bbs_logo.png" class="logologin"></h2><br>
-						<p style="color: white;">Rejoingnez notre communoté et bénéficiez des offres spéciales chaque jours. Créez un compte
-							maintenant.</p><br><br>
+						<p style="color: white;font-family: Jazz LET, fantasy; font-size: 20px;">Rejoingnez notre communoté et bénéficiez des offres spéciales chaque jours. Créez un compte
+							maintenant.</p><br>
                             <div class="agile-sometext">
                                 <div class="sub-some">
-                                    <h5 style="color: white;">Book Shopping</h5>
-                                    <p style="color: white;">Commandez en ligne. Tous vos produits libraire préférés à bas prixs prix et les livraisons à
+                                    <h5 style="color: white;font-family: Jazz LET, fantasy;">Book Shopping</h5>
+                                    <p style="color: white; font-family: Jazz LET, fantasy; font-size: 20px;">Commandez en ligne. Tous vos produits libraire préférés à bas prixs prix et les livraisons à
                                         domicile dans les villes de
                                         Douala, Yaoundé et d'autres villes du Cameroun.</p>
-                                </div>
-                                <!-- brands -->
-                                <!-- //brands -->
+                                </div><br><br>
                                 <!-- payment -->
                                 <div class="sub-some child-momu">
-                                    <h5  style="color: white;">Mode de paiement disponibles</h5>
+                                    <h5 style="color: white; font-family: Jazz LET, fantasy;">Modes de paiement disponibles</h5>
                                     <ul>
                                         <li>
                                             <img src="images/om.png" alt="" style="background-color: white; border-radius: 5px;">
@@ -821,6 +834,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
 				</div>
 			</div>
+
 
 
 
