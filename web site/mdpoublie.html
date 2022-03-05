@@ -1,0 +1,983 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>BBS | Produits</title>
+	<!--/tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="./images/icon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Boook, livre, bouquins, rentrée, scolaire, fourniture" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<style>
+		.login {
+			background-image: url("./images/bg_auth.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: "Open Sans", sans-serif;
+			color: #333333;
+		}
+
+        .logologin{
+            width: 100%;
+        }
+
+		.box-form {
+			margin: 0 auto;
+			width: 80%;
+			background: #FFFFFF;
+			border-radius: 10px;
+			overflow: hidden;
+			display: flex;
+			flex: 1 1 100%;
+			align-items: stretch;
+			justify-content: space-between;
+			box-shadow: 0 0 20px 6px #090b6f85;
+		}
+
+		@media (max-width: 980px) {
+			.box-form {
+				flex-flow: wrap;
+				text-align: left;
+				align-content: center;
+				align-items: center;
+			}
+		}
+
+		.box-form div {
+			height: auto;
+		}
+
+		.box-form .left {
+			color: #FFFFFF;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-image: url("./images/books2.jpg");
+			overflow: hidden;
+		}
+
+		.box-form .left .overlay {
+			padding: 30px;
+			width: 100%;
+			height: 100%;
+			background: #00000098;
+			overflow: hidden;
+			box-sizing: border-box;
+		}
+
+		.box-form .left .overlay h1 {
+			font-size: 10vmax;
+			line-height: 1;
+			font-weight: 900;
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+
+		.box-form .left .overlay span p {
+			margin-top: 30px;
+			font-weight: 900;
+		}
+
+		.box-form .left .overlay span a {
+			background: #3b5998;
+			color: #FFFFFF;
+			margin-top: 10px;
+			padding: 14px 50px;
+			border-radius: 100px;
+			display: inline-block;
+			box-shadow: 0 3px 6px 1px #042d4657;
+		}
+
+		.box-form .left .overlay span a:last-child {
+			background: #1dcaff;
+			margin-left: 30px;
+		}
+
+		.box-form .right {
+			padding: 40px;
+			overflow: hidden;
+		}
+
+		@media (max-width: 980px) {
+			.box-form .right {
+				width: 100%;
+			}
+		}
+
+		.box-form .right h5 {
+			font-size: 6vmax;
+			line-height: 0;
+		}
+
+		.box-form .right p {
+			font-size: 14px;
+			color: #B0B3B9;
+		}
+
+		.box-form .right .inputs {
+			overflow: hidden;
+		}
+
+		.box-form .right input {
+			width: 100%;
+			padding: 10px;
+			margin-top: 25px;
+			font-size: 16px;
+			border: none;
+			outline: none;
+			border-bottom: 2px solid #B0B3B9;
+		}
+
+		.box-form .right .remember-me--forget-password {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.box-form .right .remember-me--forget-password input {
+			margin: 0;
+			margin-right: 7px;
+			width: auto;
+		}
+
+		.box-form .right button {
+			float: right;
+			color: #fff;
+			font-size: 16px;
+			padding: 12px 35px;
+			border-radius: 50px;
+			display: inline-block;
+			border: 0;
+			outline: 0;
+			box-shadow: 0px 4px 20px 0px #49c628a6;
+			background-image: linear-gradient(135deg, #1accfd 10%, #1083b5 100%);
+		}
+
+		label::before {
+			content: ' \f00c';
+			position: absolute;
+			font-family: FontAwesome;
+			background: transparent;
+			border: 3px solid #1accfd;
+			border-radius: 4px;
+			color: transparent;
+			left: -30px;
+			transition: all 0.2s linear;
+		}
+
+		label:hover::before {
+			font-family: FontAwesome;
+			content: ' \f00c';
+			color: #fff;
+			cursor: pointer;
+			background: #1accfd;
+		}
+
+		label:hover::before .text-checkbox {
+			background: #1accfd;
+		}
+
+		label span.text-checkbox {
+			display: inline-block;
+			height: auto;
+			position: relative;
+			cursor: pointer;
+			transition: all 0.2s linear;
+		}
+
+		label input[type="checkbox"] {
+			/* display: none; */
+		}
+	</style>
+	<!--//tags -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!--pop-up-box-->
+	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<!--//pop-up-box-->
+	<!-- price range -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
+	<!-- fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+	<!-- top-header -->
+	<!-- header-bot-->
+	<div class="header-bot">
+		<div class="header-bot_inner_wthreeinfo_header_mid">
+			<!-- header-bot-->
+			<div class="col-md-3 logo_agile">
+				<h1>
+					<a href="index.html">
+						<img src="images/bbs_logo.png" class="logoTop" alt="BBS_logo" style="width: 100% !important;">
+					</a>
+				</h1>
+			</div>
+			<!-- header-bot -->
+			<div class="col-md-8 header">
+				<!-- header lists -->
+				<ul>
+					<li>
+						<span class="fa fa-phone" aria-hidden="true"></span> 696 100 982 <i class="fa fa-whatsapp"
+							style="color: red;"></i>
+					</li>
+					<li>
+						<a href="#" data-toggle="modal" data-target="#myModal1">
+							<span class="fa fa-unlock-alt" aria-hidden="true"></span> S'identifier </a>
+					</li>
+					<li>
+						<a href="love.html">
+							<span class="fa fa-heart-o" aria-hidden="true"></span> Voeux </a>
+					</li>
+				</ul>
+				<!-- //header lists -->
+				<!-- search -->
+				<div class="agileits_search">
+					<form action="#" method="post">
+						<input name="Search" type="search" placeholder="Comment pouvons-nous vous aider aujourd'hui ?"
+							required="">
+						<button type="submit" style="border-radius: 15 15px 15 px 15 !important;"
+							class="btn btn-default" aria-label="Left Align">
+							<span class="fa fa-search" aria-hidden="true"> </span>
+						</button>
+					</form>
+				</div>
+				<!-- //search -->
+				<!-- cart details -->
+				<div class="top_nav_right">
+					<div class="wthreecartaits wthreecartaits2 cart cart box_1">
+						<form action="#" method="post" class="last">
+							<input type="hidden" name="cmd" value="_cart">
+							<input type="hidden" name="display" value="1">
+							<button class="w3view-cart" type="submit" name="submit" value="">
+								<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+							</button>
+						</form>
+					</div>
+				</div>
+				<!-- //cart details -->
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div id="small-dialog1" class="mfp-hide">
+		<div class="select-city">
+			<h3>Veuillez sélectionner votre emplacement</h3>
+			<select class="list_of_cities">
+				<optgroup label="Villes populaire">
+					<option selected style="display:none;color:#eee;">Sélectionner une ville</option>
+					<option>Douala</option>
+					<option>Yaoundé</option>
+				</optgroup>
+				<optgroup label="Yaoundé">
+					<option>Yaoundé</option>
+					<option>Essos</option>
+					<option>Melen</option>
+					<option>Mvan</option>
+					<option>Emana</option>
+				</optgroup>
+				<optgroup label="Douala">
+					<option>Dakar</option>
+					<option>New bell</option>
+					<option>Bonapriso</option>
+					<option>bonamoussadi</option>
+					<option>PK12</option>
+				</optgroup>
+			</select>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+
+	<!-- //shop locator (popup) -->
+	<!-- signin Model -->
+	<!-- Modal1 -->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="main-mailposi">
+						<span class="fa fa-envelope-o" aria-hidden="true"></span>
+					</div>
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">S'identifier </h3>
+						<p>
+							Connectez-vous maintenant, et commencez à faire vos courses. Vous n'avez pas de compte ?
+							<a href="love.html">
+								S'enregistrer</a>
+						</p>
+						<form action="#" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" placeholder="Email" name="Name" required="">
+							</div>
+							<div class="styled-input">
+								<input type="password" placeholder="Mot de passe" name="password" required="">
+							</div>
+							<input type="submit" value="Se connecter">
+						</form>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
+	<!-- //Modal1 -->
+	<!-- //signin Model -->
+	<!-- signup Model -->
+	<!-- Modal2 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body modal-body-sub_agile">
+					<div class="main-mailposi">
+						<span class="fa fa-envelope-o" aria-hidden="true"></span>
+					</div>
+					<div class="modal_body_left modal_body_left1">
+						<h3 class="agileinfo_sign">Créer mon compte</h3>
+						<p>
+							Rejoingnez la communauté Boobookshop !
+						</p>
+						<form action="#" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" placeholder="Nom" name="Name" required="">
+							</div>
+							<div class="styled-input">
+								<input type="email" placeholder="E-mail" name="Email" required="">
+							</div>
+							<div class="styled-input">
+								<input type="password" placeholder="Mot de passe" name="password" id="password1"
+									required="">
+							</div>
+							<div class="styled-input">
+								<input type="password" placeholder="Confirmer le mot de passe" name="Confirm Password"
+									id="password2" required="">
+							</div>
+							<input type="submit" value="S'enregistrer">
+						</form>
+						<p>
+							En cliquant sur s'inscrire, j'accepte les <a href="#">conditions d'utilisation</a>.
+						</p>
+						<br>
+						<p>Avez-vous déjà un compte ?</p><a href="love.html">
+							S'identifier</a>
+					</div>
+				</div>
+			</div>
+			<!-- //Modal content-->
+		</div>
+	</div>
+	<!-- //Modal2 -->
+	<!-- navigation -->
+	<div class="ban-top">
+		<div class="container">
+			<div class="top_nav_left">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav menu__list">
+								<li class="active">
+									<a class="nav-stylehead" href="index.html">Accueil
+										<!-- <span class="sr-only">(current)</span> -->
+									</a>
+								</li>
+								<!-- <li class="dropdown">
+									<a href="#" class="dropdown-toggle nav-stylehead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kitchen
+										<span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu multi-column columns-3">
+										<div class="agile_inner_drop_nav_info">
+											<div class="col-sm-4 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li>
+														<a href="product.html">Bakery</a>
+													</li>
+													<li>
+														<a href="product.html">Baking Supplies</a>
+													</li>
+													<li>
+														<a href="product.html">Coffee, Tea & Beverages</a>
+													</li>
+													<li>
+														<a href="product.html">Dried Fruits, Nuts</a>
+													</li>
+													<li>
+														<a href="product.html">Sweets, Chocolate</a>
+													</li>
+													<li>
+														<a href="product.html">Spices & Masalas</a>
+													</li>
+													<li>
+														<a href="product.html">Jams, Honey & Spreads</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-sm-4 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li>
+														<a href="product.html">Pickles</a>
+													</li>
+													<li>
+														<a href="product.html">Pasta & Noodles</a>
+													</li>
+													<li>
+														<a href="product.html">Rice, Flour & Pulses</a>
+													</li>
+													<li>
+														<a href="product.html">Sauces & Cooking Pastes</a>
+													</li>
+													<li>
+														<a href="product.html">Snack Foods</a>
+													</li>
+													<li>
+														<a href="product.html">Oils, Vinegars</a>
+													</li>
+													<li>
+														<a href="product.html">Meat, Poultry & Seafood</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-sm-4 multi-gd-img">
+												<img src="images/nav.png" alt="">
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</ul>
+								</li> -->
+
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Rentrée
+										Scolaire
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="product.html">Préréserver vos livres
+											</a>
+										</li>
+										<li>
+											<a href="product.html">Commander vos livres
+											</a>
+										</li>
+										<li>
+											<a href="product.html">Echanger vos livres
+											</a>
+										</li>
+										<li>
+											<a href="product.html">Découvrer les livres
+											</a>
+										</li>
+										<li>
+											<a href="product.html">Localiser des livres </a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Livres en
+										vedette
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="product2.html">Best Sellers
+											</a>
+										</li>
+										<li>
+											<a href="product2.html">Les mieux notés
+											</a>
+										</li>
+										<li>
+											<a href="product2.html">Nouveaux talents</a>
+										</li>
+										<li>
+											<a href="product2.html">Coups de cœur
+											</a>
+										</li>
+										<li>
+											<a href="product2.html">Nouvelles sorties
+											</a>
+										</li>
+										<li>
+											<a href="product2.html">Bientôt disponibles </a>
+										</li>
+										<li>
+											<a href="product2.html"> Sponsorisés </a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#"
+										data-toggle="dropdown">Généralistes
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="icons.html">Fictions</a>
+										</li>
+										<li>
+											<a href="typography.html">Poésie</a>
+										</li>
+										<li>
+											<a href="typography.html">Drame</a>
+										</li>
+										<li>
+											<a href="typography.html">Sport</a>
+										</li>
+										<li>
+											<a href="typography.html">Non Fiction</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Arts et
+										sciences
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="icons.html">Mathématiques</a>
+										</li>
+										<li>
+											<a href="typography.html">Droit</a>
+										</li>
+										<li>
+											<a href="typography.html">Langues</a>
+										</li>
+										<li>
+											<a href="typography.html">Informatique</a>
+										</li>
+										<li>
+											<a href="typography.html">Technologie</a>
+										</li>
+										<li>
+											<a href="typography.html">Agriculture</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown"> Jenesse
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="icons.html">Enfants</a>
+										</li>
+										<li>
+											<a href="typography.html">Adolescents</a>
+										</li>
+										<li>
+											<a href="typography.html">Jeunes adultes</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Numériques
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="icons.html">E-Book</a>
+										</li>
+										<li>
+											<a href="typography.html">Livres audio</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Services
+										Spécialisés
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="icons.html">Entreprise
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Bibliothèques à l’école
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Presse et revues
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Soutien scolaire
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Epreuves et concours
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Corrections de sujet
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Collecte de livres
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Actualités
+										éducation
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="typography.html">Calendriers concours
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Liste de livres
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Concours d'expression
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Distribution de livres
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="nav-stylehead dropdown-toggle" href="#" data-toggle="dropdown">Carte de
+										vœux
+										<b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li>
+											<a href="icons.html">Naissance
+											</a>
+										</li>
+										<li>
+											<a href="typography.html">Anniversaire</a>
+										</li>
+										<li>
+											<a href="typography.html">Mariage</a>
+										</li>
+										<li>
+											<a href="typography.html">Baptèmes</a>
+										</li>
+										<li>
+											<a href="typography.html">Noël</a>
+										</li>
+										<li>
+											<a href="typography.html">Tabaski</a>
+										</li>
+									</ul>
+								</li>
+								<!-- <li class="">
+									<a class="nav-stylehead" href="contact.html">Contact</a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- //navigation -->
+	<!-- banner-2 -->
+
+	<!-- partial:index.partial.html -->
+	<div class="login" style="padding-top: 50px; padding-bottom: 2%;">
+		<div class="box-form">
+			<div class="right">
+				<br>
+				<h2>Mot de passe oublié</h2>
+				<br><br>
+				<div class="inputs">
+                    <label for="email">Email</label><br>
+					<input id="email" type="text" placeholder="Email">
+				</div>
+
+				<br><br>
+				<br>
+
+				<button>Réinitialiser</button>
+				<br>
+				<br><br><br>
+				<p>Vous n'avez pas de compte? <a href="#">Créer un compte</a> en une minute, c'est gratuit.</p>
+			</div>
+			<div class="left">
+				<div class="overlay">
+					<h2><img src="images/bbs_logo.png" class="logologin"></h2><br>
+						<p style="color: white;">Rejoingnez notre communoté et bénéficiez des offres spéciales chaque jours. Créez un compte
+							maintenant.</p><br><br>
+                            <div class="agile-sometext">
+                                <div class="sub-some">
+                                    <h5 style="color: white;">Book Shopping</h5>
+                                    <p style="color: white;">Commandez en ligne. Tous vos produits libraire préférés à bas prixs prix et les livraisons à
+                                        domicile dans les villes de
+                                        Douala, Yaoundé et d'autres villes du Cameroun.</p>
+                                </div>
+                                <!-- brands -->
+                                <!-- //brands -->
+                                <!-- payment -->
+                                <div class="sub-some child-momu">
+                                    <h5  style="color: white;">Mode de paiement disponibles</h5>
+                                    <ul>
+                                        <li>
+                                            <img src="images/om.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li>
+                                        <li>
+                                            <img src="images/momo.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li>
+                                        <li>
+                                            <img src="images/cash.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li>
+                                        <li>
+                                            <img src="images/pay2.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li>
+                                        <!-- <li>
+                                            <img src="images/pay5.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li> -->
+                                        <li>
+                                            <img src="images/pay1.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li>
+                                        <li>
+                                            <img src="images/paypal.png" alt="" style="background-color: white; border-radius: 5px;">
+                                        </li>
+                                        <!-- <li>
+                                            <img src="images/pay8.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="images/pay9.png" alt="">
+                                        </li> -->
+                                    </ul>
+                                </div>
+                                <!-- //payment -->
+                            </div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+	
+	<!-- copyright -->
+	<div class="copy-right">
+		<div class="container">
+			<p>© 2022 Bookbookshop. Tous droits réservés
+				<!-- | Réalisé par
+				<a href="http://yabain.com"> Yaba-In.</a> -->
+			</p>
+		</div>
+	</div>
+	<!-- //copyright -->
+	<a id="toTop" class="toTop" href="#" style="display: inline;">
+		<span id="toTopHover" style="opacity: 0;"></span> To Top</a>
+
+	<!-- js-files -->
+	<!-- jquery -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- //jquery -->
+
+	<!-- popup modal (for signin & signup)-->
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+
+		});
+	</script>
+	<!-- Large modal -->
+	<!-- <script>
+		$('#').modal('show');
+	</script> -->
+	<!-- //popup modal (for signin & signup)-->
+
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+		paypalm.minicartk.render(); //use only unique class names other than paypal1.minicart1.Also Replace same class name in css and minicart.min.js
+
+		paypalm.minicartk.cart.on('checkout', function (evt) {
+			var items = this.items(),
+				len = items.length,
+				total = 0,
+				i;
+
+			// Count the number of each item in the cart
+			for (i = 0; i < len; i++) {
+				total += items[i].get('quantity');
+			}
+
+			if (total < 3) {
+				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+				evt.preventDefault();
+			}
+		});
+	</script>
+	<!-- //cart-js -->
+
+	<!-- price range (top products) -->
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		//<![CDATA[ 
+		$(window).load(function () {
+			$("#slider-range").slider({
+				range: true,
+				min: 0,
+				max: 9000,
+				values: [50, 6000],
+				slide: function (event, ui) {
+					$("#amount").val(ui.values[0] + " - " + ui.values[1]);
+				}
+			});
+			$("#amount").val($("#slider-range").slider("values", 0) + " - " + $("#slider-range").slider("values", 1));
+
+		}); //]]>
+	</script>
+	<!-- //price range (top products) -->
+
+	<!-- flexisel (for special offers) -->
+	<script src="js/jquery.flexisel.js"></script>
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 2
+					}
+				}
+			});
+
+		});
+	</script>
+	<!-- //flexisel (for special offers) -->
+
+	<!-- password-script -->
+	<script>
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+	<!-- //password-script -->
+
+	<!-- smoothscroll -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- //smoothscroll -->
+
+	<!-- start-smooth-scrolling -->
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+
+	<!-- smooth-scrolling-of-move-up -->
+	<script>
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->
+
+	<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<!-- //for bootstrap working -->
+	<!-- //js-files -->
+
+</body>
+
+</html>
