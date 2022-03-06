@@ -33,9 +33,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			color: #333333;
 		}
 
-        .logologin{
-            width: 100%;
-        }
+		.logologin {
+			width: 100%;
+		}
 
 		.box-form {
 			margin: 0 auto;
@@ -167,6 +167,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			box-shadow: 0px 4px 20px 0px #1accfd89;
 			background-image: linear-gradient(135deg, #1accfd 10%, #1083b5 100%);
 		}
+
 		.box-form .right button:hover {
 			float: right;
 			color: #fff;
@@ -737,13 +738,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="login" style="padding-top: 50px; padding-bottom: 2%;">
 		<div class="box-form">
 			<div class="right" style="
-			font-family: Jazz LET, fantasy;">
+			font-family: Times, Times New Roman, serif;">
 				<br>
 				<h2 style="
-				font-family: Jazz LET, fantasy;">Inscription</h2>
+				font-family: Times, Times New Roman, serif;">Inscription</h2>
 				<br><br>
 				<div class="inputs">
 					<label style=" fantasy; font-size: 20px;" for="nom">Nom</label><br>
+					<input style="font-style: italic" type="text" id="nom" placeholder="Nom complet">
+					<br><br>
+					<label style=" fantasy; font-size: 20px;" for="prenom">Prénom</label><br>
 					<input style="font-style: italic" type="text" id="nom" placeholder="Nom complet">
 					<br><br>
 					<label style=" fantasy; font-size: 20px;" for="contact">Contact</label><br>
@@ -762,7 +766,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input style="font-style: italic" type="password" id="password" placeholder="Mot de passe">
 					<br><br>
 					<label style=" fantasy; font-size: 20px;" for="password2">Mot de passe</label><br>
-					<input style="font-style: italic" type="password" id="password2" placeholder="confirmer le mot de passe">
+					<input style="font-style: italic" type="password" id="password2"
+						placeholder="confirmer le mot de passe">
 				</div>
 
 				<br><br>
@@ -771,10 +776,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<!-- Angular -->
 					<label>
 						<input type="checkbox" checked />
-						<span class="text-checkbox">J'accepte les conditions d'utilisations.</span>
+						<span class="text-checkbox">Recevoir les offres de nos partenaires</span>
+					</label>
+				</div><br>
+				<div class="remember-me--forget-password">
+					<label>
+						<input type="checkbox" checked />
+						<span class="text-checkbox"> Recevoir notre newsletter</span><br>
+						<i> Vous pouvez vous désabonner à tout moment. Pour cela, veuillez trouver nos coordonnées dans
+						les mentions légales.</i>
+					</label>
+				</div><br>
+				<div class="remember-me--forget-password">
+					<label>
+						<input type="checkbox" checked />
+						<span class="text-checkbox">J'accepte les termes et conditions</span> et la politique de
+						confidentialité.
 					</label>
 					<br>
-				</div><br>
+				</div>
+				<br>
 				<p style="font-style: italic">Mot de passe oublié</p>
 				<br>
 
@@ -785,53 +806,61 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p>Vous n'avez pas de compte? <a href="#">Créer un compte</a> en une minute, c'est gratuit.</p>
 			</div>
 			<div class="left" style="
-				font-family: Jazz LET, fantasy; font-size: 2em;">
+				font-family: Times, Times New Roman, serif; font-size: 2em;">
 				<div class="overlay">
 					<h2><img src="images/bbs_logo.png" class="logologin"></h2><br>
-						<p style="color: white;font-family: Jazz LET, fantasy; font-size: 20px;">Rejoingnez notre communoté et bénéficiez des offres spéciales chaque jours. Créez un compte
-							maintenant.</p><br>
-                            <div class="agile-sometext">
-                                <div class="sub-some">
-                                    <h5 style="color: white;font-family: Jazz LET, fantasy;">Book Shopping</h5>
-                                    <p style="color: white; font-family: Jazz LET, fantasy; font-size: 20px;">Commandez en ligne. Tous vos produits libraire préférés à bas prixs prix et les livraisons à
-                                        domicile dans les villes de
-                                        Douala, Yaoundé et d'autres villes du Cameroun.</p>
-                                </div><br><br>
-                                <!-- payment -->
-                                <div class="sub-some child-momu">
-                                    <h5 style="color: white; font-family: Jazz LET, fantasy;">Modes de paiement disponibles</h5>
-                                    <ul>
-                                        <li>
-                                            <img src="images/om.png" alt="" style="background-color: white; border-radius: 5px;">
-                                        </li>
-                                        <li>
-                                            <img src="images/momo.png" alt="" style="background-color: white; border-radius: 5px;">
-                                        </li>
-                                        <li>
-                                            <img src="images/cash.png" alt="" style="background-color: white; border-radius: 5px;">
-                                        </li>
-                                        <li>
-                                            <img src="images/pay2.png" alt="" style="background-color: white; border-radius: 5px;">
-                                        </li>
-                                        <!-- <li>
+					<p style="color: white;font-family: Times, Times New Roman, serif; font-size: 20px;">Rejoingnez notre communoté
+						et bénéficiez des offres spéciales chaque jours. Créez un compte
+						maintenant.</p><br>
+					<div class="agile-sometext">
+						<div class="sub-some">
+							<h5 style="color: white;font-family: Times, Times New Roman, serif;">Book Shopping</h5>
+							<p style="color: white; font-family: Times, Times New Roman, serif; font-size: 20px;">Commandez en
+								ligne. Tous vos produits libraire préférés à bas prixs prix et les livraisons à
+								domicile dans les villes de
+								Douala, Yaoundé et d'autres villes du Cameroun.</p>
+						</div><br><br>
+						<!-- payment -->
+						<div class="sub-some child-momu">
+							<h5 style="color: white; font-family: Times, Times New Roman, serif;">Modes de paiement disponibles</h5>
+							<ul>
+								<li>
+									<img src="images/om.png" alt=""
+										style="background-color: white; border-radius: 5px;">
+								</li>
+								<li>
+									<img src="images/momo.png" alt=""
+										style="background-color: white; border-radius: 5px;">
+								</li>
+								<li>
+									<img src="images/cash.png" alt=""
+										style="background-color: white; border-radius: 5px;">
+								</li>
+								<li>
+									<img src="images/pay2.png" alt=""
+										style="background-color: white; border-radius: 5px;">
+								</li>
+								<!-- <li>
                                             <img src="images/pay5.png" alt="" style="background-color: white; border-radius: 5px;">
                                         </li> -->
-                                        <li>
-                                            <img src="images/pay1.png" alt="" style="background-color: white; border-radius: 5px;">
-                                        </li>
-                                        <li>
-                                            <img src="images/paypal.png" alt="" style="background-color: white; border-radius: 5px;">
-                                        </li>
-                                        <!-- <li>
+								<li>
+									<img src="images/pay1.png" alt=""
+										style="background-color: white; border-radius: 5px;">
+								</li>
+								<li>
+									<img src="images/paypal.png" alt=""
+										style="background-color: white; border-radius: 5px;">
+								</li>
+								<!-- <li>
                                             <img src="images/pay8.png" alt="">
                                         </li>
                                         <li>
                                             <img src="images/pay9.png" alt="">
                                         </li> -->
-                                    </ul>
-                                </div>
-                                <!-- //payment -->
-                            </div>
+							</ul>
+						</div>
+						<!-- //payment -->
+					</div>
 				</div>
 			</div>
 
@@ -840,7 +869,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		</div>
 	</div>
-	
+
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
