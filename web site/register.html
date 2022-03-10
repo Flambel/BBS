@@ -24,6 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 	</script>
 	<style>
+		/* start authentification style */
 		.login {
 			background-image: url("./images/bg_auth.png");
 			background-size: cover;
@@ -33,11 +34,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			color: #333333;
 		}
 
-		.logologin {
+		.login .logologin {
 			width: 100%;
 		}
 
-		.box-form {
+		.login .box-form {
 			margin: 0 auto;
 			width: 80%;
 			background: #FFFFFF;
@@ -51,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		}
 
 		@media (max-width: 980px) {
-			.box-form {
+			.login .box-form {
 				flex-flow: wrap;
 				text-align: left;
 				align-content: center;
@@ -59,11 +60,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			}
 		}
 
-		.box-form div {
+		.login .box-form div {
 			height: auto;
 		}
 
-		.box-form .left {
+		.login .box-form .left {
 			color: #FFFFFF;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -71,7 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			overflow: hidden;
 		}
 
-		.box-form .left .overlay {
+		.login .box-form .left .overlay {
 			padding: 30px;
 			width: 100%;
 			height: 100%;
@@ -80,7 +81,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			box-sizing: border-box;
 		}
 
-		.box-form .left .overlay h1 {
+		.login .box-form .left .overlay h1 {
 			font-size: 10vmax;
 			line-height: 1;
 			font-weight: 900;
@@ -88,12 +89,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			margin-bottom: 20px;
 		}
 
-		.box-form .left .overlay span p {
+		.login .box-form .left .overlay span p {
 			margin-top: 30px;
 			font-weight: 900;
 		}
 
-		.box-form .left .overlay span a {
+		.login .box-form .left .overlay span a {
 			background: #3b5998;
 			color: #FFFFFF;
 			margin-top: 10px;
@@ -103,37 +104,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			box-shadow: 0 3px 6px 1px #042d4657;
 		}
 
-		.box-form .left .overlay span a:last-child {
+		.login .box-form .left .overlay span a:last-child {
 			background: #1dcaff;
 			margin-left: 30px;
 		}
 
-		.box-form .right {
+		.login .box-form .right {
 			padding: 40px;
 			overflow: hidden;
 		}
 
 		@media (max-width: 980px) {
-			.box-form .right {
+			.login .box-form .right {
 				width: 100%;
 			}
 		}
 
-		.box-form .right h5 {
+		.login .box-form .right h5 {
 			font-size: 6vmax;
 			line-height: 0;
 		}
 
-		.box-form .right p {
+		.login .box-form .right p {
 			font-size: 14px;
 			color: #B0B3B9;
 		}
 
-		.box-form .right .inputs {
+		.login .box-form .right .inputs {
 			overflow: hidden;
 		}
 
-		.box-form .right input {
+		.login .box-form .right input {
 			width: 100%;
 			padding: 10px;
 			margin-top: 25px;
@@ -143,19 +144,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			border-bottom: 2px solid #B0B3B9;
 		}
 
-		.box-form .right .remember-me--forget-password {
+		.login .box-form .right .remember-me--forget-password {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 		}
 
-		.box-form .right .remember-me--forget-password input {
+		.login .box-form .right .remember-me--forget-password input {
 			margin: 0;
 			margin-right: 7px;
 			width: auto;
 		}
 
-		.box-form .right button {
+		.login .box-form .right button {
 			float: right;
 			color: #fff;
 			font-size: 16px;
@@ -168,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			background-image: linear-gradient(135deg, #1accfd 10%, #1083b5 100%);
 		}
 
-		.box-form .right button:hover {
+		.login .box-form .right button:hover {
 			float: right;
 			color: #fff;
 			font-size: 16px;
@@ -181,7 +182,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			background-image: linear-gradient(135deg, #c73b59 10%, #a41a38 100%);
 		}
 
-		label::before {
+		.login label::before {
 			content: ' \f00c';
 			position: absolute;
 			font-family: FontAwesome;
@@ -193,7 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			transition: all 0.2s linear;
 		}
 
-		label:hover::before {
+		.login label:hover::before {
 			font-family: FontAwesome;
 			content: ' \f00c';
 			color: #fff;
@@ -201,11 +202,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			background: #1accfd;
 		}
 
-		label:hover::before .text-checkbox {
+		.login label:hover::before .text-checkbox {
 			background: #1accfd;
 		}
 
-		label span.text-checkbox {
+		.login label span.text-checkbox {
 			display: inline-block;
 			height: auto;
 			position: relative;
@@ -213,9 +214,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			transition: all 0.2s linear;
 		}
 
-		label input[type="checkbox"] {
+		.login label input[type="checkbox"] {
 			/* display: none; */
 		}
+		.login label {
+			margin-bottom: 0% !important;
+			padding-bottom: 0% !important;
+		}
+		/* end authentification style */
 	</style>
 	<!--//tags -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -248,8 +254,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- header lists -->
 				<ul>
 					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 696 100 982 <i class="fa fa-whatsapp"
-							style="color: red;"></i>
+						<span class="fa fa-phone" aria-hidden="true"></span> 696 100 982 
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal1">
@@ -739,33 +744,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="box-form">
 			<div class="right" style="
 			font-family: Times, Times New Roman, serif;">
-				<br>
 				<h2 style="
 				font-family: Times, Times New Roman, serif;">Inscription</h2>
 				<br><br>
 				<div class="inputs">
-					<label style=" fantasy; font-size: 20px;" for="nom">Nom</label><br>
-					<input style="font-style: italic" type="text" id="nom" placeholder="Nom complet">
+					<label style="font-family: Times, Times New Roman; font-size: 20px;" for="nom">Nom</label>
+					<input style="font-style: italic" type="text" id="nom" placeholder="Nom">
 					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="prenom">Prénom</label><br>
-					<input style="font-style: italic" type="text" id="nom" placeholder="Nom complet">
+					<label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="prenom">Prénom</label><br>
+					<input style="font-style: italic" type="text" id="prenom" placeholder="Prénom">
 					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="contact">Contact</label><br>
+					<!-- <label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="contact">Contact</label><br>
 					<input style="font-style: italic" id="contact" type="text" placeholder="Numéro de téléphone">
 					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="ville">Ville</label><br>
+					<label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="ville">Ville</label><br>
 					<input style="font-style: italic" id="ville" type="text" placeholder="Ville de résidence">
-					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="dateNaiss">Date de naissance</label><br>
+					<br><br> -->
+					<label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="dateNaiss">Date de naissance</label><br>
 					<input style="font-style: italic" type="text" id="dateNaiss" placeholder="Date de naissance">
 					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="email">Email</label><br>
+					<label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="email">Email</label><br>
 					<input style="font-style: italic" type="text" id="email" placeholder="Email">
 					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="password">Mot de passe</label><br>
+					<label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="password">Mot de passe</label><br>
 					<input style="font-style: italic" type="password" id="password" placeholder="Mot de passe">
 					<br><br>
-					<label style=" fantasy; font-size: 20px;" for="password2">Mot de passe</label><br>
+					<label style="font-family: Times, Times New Roman, serif; font-size: 20px;" for="password2">Mot de passe</label><br>
 					<input style="font-style: italic" type="password" id="password2"
 						placeholder="confirmer le mot de passe">
 				</div>

@@ -5,11 +5,11 @@ ul.resp-tabs-list, p {
 
 .resp-tabs-list li {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 13px 55.5px;
-    margin: 0 17px 0 0;
+    padding: 5px 20px;
+    margin: 0 0 0 0;
     list-style: none;
     cursor: pointer;
     float: left;

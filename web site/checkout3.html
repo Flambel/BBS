@@ -32,15 +32,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--//pop-up-box-->
 	<!-- price range -->
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui1.css">
-	<link rel="stylesheet" type="text/css" href="./404.scss">
-	<!-- flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
-
 </head>
 
 <body>
+	<!-- header-bot-->
 	<div class="header-bot">
 		<div class="header-bot_inner_wthreeinfo_header_mid">
 			<!-- header-bot-->
@@ -135,7 +132,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clearfix"></div>
 		</div>
 	</div>
-
 
 	<!-- //shop locator (popup) -->
 	<!-- signin Model -->
@@ -567,42 +563,176 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //navigation -->
 	<!-- banner-2 -->
-	<!-- <div class="page-head_agile_info_w3l"> -->
+	<div class="page-head_agile_info_w3l">
 
 	</div>
 	<!-- //banner-2 -->
-
-	<!-- Single Page -->
-	<div class="banner-bootom-w3-agileits">
-		<div class="container">
-		</div>
-		<!-- //Single Page -->
-		<!-- special offers -->
-		<div class="featured-section" id="projects">
+	<!-- page -->
+	<div class="services-breadcrumb">
+		<div class="agile_inner_breadcrumb">
 			<div class="container">
-				<div class="number" style="color: #E0234B !important;
-			background: #fff;
-			font: 900 30vmin 'Consolas';
-			padding: auto !important;
-			letter-spacing: 5vmin;
-			text-shadow: multiple-shadow(8);"> 4<b style="color: #1accfd !important;">0</b>4</div>
-				<div class="text">
-					<h3 class="tittle-w3l">Ooops...
-						<span class="heading-style">
-							<i></i>
-							<i></i>
-							<i></i>
-						</span>
-					</h3>
-					<h3 class="tittle-w3l">Page introuvable</h3>
-				</div>
+				<ul class="w3_short">
+					<li>
+						<a href="index.html">Accueil</a>
+						<i>|</i>
+					</li>
+					<li>Commandes</li>
+				</ul>
 			</div>
-			<!-- tittle heading -->
-			<!-- //tittle heading -->
 		</div>
 	</div>
-	<!-- //special offers -->
+	<!-- //page -->
+	<!-- checkout page -->
+	<div class="privacy">
+		<div class="container">
+			<!-- tittle heading -->
+			<h3 class="tittle-w3l">Commandes
+				<span class="heading-style">
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</h3>
+			<div class="side-bar col-md-3">
+				<div class="search-hotel">
+					<h3 class="agileits-sear-head">Facturation</h3>
+					<div style="text-align: left;">
+						3 articles:
+					</div>
+					<div style="text-align: right;">
+						<b>8 000 FCFA</b>
+					</div><br>
+					<div style="text-align: left;">
+						Total (TH):
+					</div>
+					<div style="text-align: right;">
+						<b>8 000 FCFA</b>
+					</div><br>
+				</div><br>
+				<b style="text-align: left;">
+					Totak (TCC):
+				</b>
+				<b style="text-align: right;">
+					8 000 FCFA
+				</b><br><br>
+			</div>
+			<!-- //tittle heading -->
+			<br>
+			<div class="checkout-right col-md-8">
+				<h4 class="container">Adress de reception</h4>
+				<div class="container"><input class="text-checkbox" id="agree" type="checkbox" name="agree" required="">
+					Mon adresse de facturation est la même que mon adresse de livraison. <br>
 
+					<div class="side-bar col-md-6">
+						<div class="search-hotel">
+							<h3 class="agileits-sear-head" style="color: black;">Mon adresse de livraison</h3><br>
+							<div style="text-align: left;">
+								Nom:
+							</div>
+							<div style="text-align: right;">
+								<b>...</b>
+							</div><br>
+							<div style="text-align: left;">
+								...
+							</div>
+							<div style="text-align: right;">
+								<b>...</b>
+							</div>
+						</div>
+					</div>
+				</div><br>
+				<div class="address_form_agile container side-bar">
+					<h3 class="agileits-sear-head" style="color: black;">Autre adresse</h3><br>
+					<form action="payment.html" method="post" class="creditly-card-form agileinfo_form">
+						<div class="creditly-wrapper wthree, w3_agileits_wrapper">
+							<div class="information-wrapper">
+								<div class="first-row">
+									<div class="controls col-md-12">
+										<label for="alias">Alias</label>
+										<input class="billing-address-name" type="text" id="alias" name="alias"
+											placeholder="saisir votre une alias" required="">
+									</div>
+									<div class="controls col-md-12">
+										<label for="nom">Nom</label>
+										<input class="billing-address-name" type="text" id="nom" name="nom"
+											placeholder="saisir le nom du recepteur" required="">
+									</div>
+									<div class="controls col-md-12">
+										<label for="prenom">Prénom</label>
+										<input class="billing-address-name" type="text" id="prenom" name="prenom"
+											placeholder="saisir le Prénom du recepteur" required="">
+									</div>
+									<div class="controls col-md-12">
+										<label for="adresse">Adresse</label>
+										<input class="billing-address-name" type="text" id="adresse" name="adresse"
+											placeholder="saisir l'Adresse du recepteur" required="">
+									</div>
+									<div class="controls col-md-12">
+										<label for="code">Code postal</label>
+										<input class="billing-address-name" type="text" id="code" name="code"
+											placeholder="saisir code postal" required="">
+									</div>
+									<div class="controls col-md-12">
+										<label for="pays">Pays</label>
+										<select class="option-w3ls">
+											<option>Cameroun</option>
+
+										</select>
+									</div>
+									<div class="controls col-md-12">
+										<label for="ville">Ville</label>
+										<input class="billing-address-name" type="text" id="ville" name="ville"
+											placeholder="saisir la ville de livraison" required="">
+									</div>
+									<div class="controls col-md-12">
+										<label for="complement">Quartier</label>
+										<input class="billing-address-name" type="text" id="complement"
+											name="complement" placeholder="" required="">
+									</div>
+
+									<div class="controls col-md-12">
+										<label for="contact">Téléphone</label>
+										<input class="billing-address-name" type="text" id="contact" name="contact"
+											placeholder="saisir code postal" required="">
+									</div>
+								</div>
+								<!-- <button class="submit check_out">Livrer à cette adress</button> -->
+							</div>
+						</div>
+					</form>
+					<button class="btn btn-info">
+						<a href="payment.html" style="color: white;">Suivant
+						</a>
+					</button>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div><br><br>
+	<!-- //checkout page -->
+	<!-- newsletter -->
+	<!-- newsletter -->
+	<div class="footer-top">
+		<div class="container-fluid">
+			<div class="col-xs-8 agile-leftmk">
+				<h2>Souscrivez à notez boîte aux lettre.</h2>
+				<p>Restez à l'écoute. <br> Faites-vous livrer vos produits libraires par des magasins locaux <br>
+					Livraison gratuite sur votre première commande !</p>
+				<form action="#" method="post">
+					<input type="email" placeholder="E-mail" name="email" required="">
+					<input type="submit" value="Souscrire">
+				</form>
+				<div class="newsform-w3l">
+					<span class="fa fa-envelope-o" aria-hidden="true"></span>
+				</div>
+			</div>
+			<div class="col-xs-4 w3l-rightmk">
+				<img src="images/mail.png" alt=" ">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //newsletter -->
 	<!-- footer -->
 	<footer>
 		<div class="container">
@@ -815,6 +945,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<a id="toTop" class="toTop" href="#" style="display: inline;">
 		<span id="toTopHover" style="opacity: 0;"></span> To Top</a>
 
+
 	<!-- js-files -->
 	<!-- jquery -->
 	<script src="js/jquery-2.1.4.min.js"></script>
@@ -867,6 +998,50 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 	<!-- //cart-js -->
+
+	<!--quantity-->
+	<script>
+		$('.value-plus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) + 1;
+			divUpd.text(newVal);
+		});
+
+		$('.value-minus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) - 1;
+			if (newVal >= 1) divUpd.text(newVal);
+		});
+	</script>
+	<!--quantity-->
+	<script>
+		$(document).ready(function (c) {
+			$('.close1').on('click', function (c) {
+				$('.rem1').fadeOut('slow', function (c) {
+					$('.rem1').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close2').on('click', function (c) {
+				$('.rem2').fadeOut('slow', function (c) {
+					$('.rem2').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close3').on('click', function (c) {
+				$('.rem3').fadeOut('slow', function (c) {
+					$('.rem3').remove();
+				});
+			});
+		});
+	</script>
+	<!--//quantity-->
 
 	<!-- password-script -->
 	<script>
@@ -925,54 +1100,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 	<!-- //smooth-scrolling-of-move-up -->
-
-	<!-- imagezoom -->
-	<script src="js/imagezoom.js"></script>
-	<!-- //imagezoom -->
-
-	<!-- FlexSlider -->
-	<script src="js/jquery.flexslider.js"></script>
-	<script>
-		// Can also be used with $(document).ready()
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				controlNav: "thumbnails"
-			});
-		});
-	</script>
-	<!-- //FlexSlider-->
-
-	<!-- flexisel (for special offers) -->
-	<script src="js/jquery.flexisel.js"></script>
-	<script>
-		$(window).load(function () {
-			$("#flexiselDemo1").flexisel({
-				visibleItems: 3,
-				animationSpeed: 1000,
-				autoPlay: true,
-				autoPlaySpeed: 3000,
-				pauseOnHover: true,
-				enableResponsiveBreakpoints: true,
-				responsiveBreakpoints: {
-					portrait: {
-						changePoint: 480,
-						visibleItems: 1
-					},
-					landscape: {
-						changePoint: 640,
-						visibleItems: 2
-					},
-					tablet: {
-						changePoint: 768,
-						visibleItems: 2
-					}
-				}
-			});
-
-		});
-	</script>
-	<!-- //flexisel (for special offers) -->
 
 	<!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
