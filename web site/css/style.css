@@ -80,7 +80,7 @@ button{
   }
 
 .gallery {
-    display: none;
+    display: flex;
     background: #EEE;
 }
 
@@ -6406,7 +6406,7 @@ select.form-control.option-w3ls {
     top: 0;
     width: 100%;
     overflow: hidden;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 
 .product-hover:after {
